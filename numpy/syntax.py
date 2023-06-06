@@ -106,3 +106,29 @@ arr = np.array([[1, 2, 3, 4], [5, 6, 7, 8]])
 
 for idx, x in np.ndenumerate(arr):
     print(idx, x)
+
+    
+arr1 = np.array([1, 2, 3])
+arr2 = np.array([4, 5, 6])
+arr = np.concatenate((arr1, arr2))
+print(arr)
+
+arr1 = np.array([1, 2, 3])
+arr2 = np.array([4, 5, 6])
+arr = np.stack((arr1, arr2), axis=1)
+print(arr)
+
+arr1 = np.array([1, 2, 3])
+arr2 = np.array([4, 5, 6])
+arr = np.hstack((arr1, arr2))
+print(arr)
+
+arr1 = np.array([1, 2, 3])
+arr2 = np.array([4, 5, 6])
+arr = np.vstack((arr1, arr2))
+print(arr)
+
+arr1 = np.array([1, 2, 3])
+arr2 = np.array([4, 5, 6])
+arr = np.dstack((arr1, arr2))
+print(arr)
